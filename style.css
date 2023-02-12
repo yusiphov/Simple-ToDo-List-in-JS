@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+    ;
+}
+
+.header {
+    background-image: url(img/lightimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+
+}
+
+.header h1 {
+
+    position: absolute;
+    left: 450px;
+    color: #fff;
+    top: 70px;
+    font-size: 40px;
+}
+
+.header img {
+
+    position: absolute;
+    left: 950px;
+    top: 70px;
+    cursor: pointer;
+}
+
+.create-todo {
+
+    position: absolute;
+    width: 540px;
+    height: 64px;
+    left: 450px;
+    top: 158px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+}
+
+.create-todo input {
+    position: absolute;
+    height: 19px;
+    width: 420px;
+    left: 11%;
+    top: 39%;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: #9495A5;
+border: none;
+outline: none;
+}
+.fa-circle-plus{
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    font-size: 24px;
+    color: rgba(85, 150, 255, 1);
+    cursor: pointer;
+}
+.circle-todo {
+    display: inline-block;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    font-size: 24px;
+    color: #E3E4F1;
+}
+.todo-list{
+    position: absolute;
+    top: 90px;
+    height: 439px;
+    width: 540px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+background: #FFFFFF;
+box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+border-radius: 5px;
+}
+.reorder{
+    position: absolute;
+    top: 550px;
+    left: 160px;
+    color: #9495A5;
+
+}
+.list-item{
+    position: relative;
+    width: 540px;
+    height: 64px;
+   
+    transition: all 0.5s;
+}
+.item{
+    position: absolute;
+    top: 36%;
+    left: 11%;
+    color: #494C6B;
+
+}
+.completed-button{
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 25px;
+    color: rgb(219, 219, 219);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+    cursor: pointer;
+}
+/* .circle-list{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 24px;
+    color: #E3E4F1;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 100px;
+}
+.circle-list:hover{
+    color: #c100b7;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+} */
+.filter-list{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -470px;
+    width: 540px;
+    height: 30px;
+    margin-bottom: 5px;
+    color: #9495A5;
+    background-color: #FFFFFF;
+    align-items: center;
+    transition: all 0.3s;
+}
+.filter-list p{
+    cursor: pointer;
+    color: #C058F3;
+}
+.filter-list p:hover{
+    color:  #3A7CFD;
+}
+.remove-button{
+    position: absolute;
+    right: 5%;
+    top: 27%;
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-x{
+    position: absolute;
+
+    right: 5%;
+    top: 38.45%;
+    bottom: -15.45%;
+    color: #D8D8D8;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fall{
+    transform: translateY(8rem);
+    opacity: 0;
+}
+.completed{
+  opacity: 0.25
+  ;
+}
+.dark{
+    background: rgba(23, 24, 35, 1);
+transition: all 0.3s;
+}
+
+.darkList{
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+   background: rgba(37, 39, 61, 1);
+   transition: all 0.3s;
+}
+/* .filterDark{
+    color: #fff;
+} */
+.todoList{
+    color: rgba(200, 203, 231, 1);
+    letter-spacing: -0.25px;
+    transition: all 0.3s;
+}
+
